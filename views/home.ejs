@@ -1,0 +1,65 @@
+<%- include('partials/header.ejs') -%>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">CF Explorer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Find User</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col">
+                <h1 class="big-heading">CF Explorer</h1>
+                <h3 class="sm-heading">
+                    Know about Competitive Porgramming community on Codeforces!
+                </h3>
+            </div>
+
+            <div class="col">
+                <img src="https://assets.codeforces.com/users/kguseva/comments/cf.png" alt="codeforces" class="cf-img">
+            </div>
+        </div>
+
+    </div>
+    
+
+    <div class="about-cf">
+        <h2>
+            What is CODEFORCES?
+        </h2>
+        <p class="abt-cf">
+            Codeforces is a website that hosts competitive programming contests.It is maintained by a group of competitive programmers from ITMO University led by Mikhail Mirzayanov. Since 2013, Codeforces claims to surpass Topcoder in terms of active contestants. As of 2018, it has over 600,000 registered users. Codeforces along with other similar websites are used by top sport programmers like Gennady Korotkevich, Petr Mitrichev, Benjamin Qi and Makoto Soejima, and by other programmers interested in furthering their careers.
+        </p>
+    </div>
+    
+    <div class="find-user">
+        
+        <h2>
+            Enter CF Handle
+        </h2>
+        <form action="/" method="POST">
+            <label for="handle-input"></label>
+            <input type="text" name="handle" placeholder="Enter Here">
+            <button type="submit">GO</button>
+        </form>
+
+    </div>
+
+    
+
+<%- include('partials/footer.ejs') -%>

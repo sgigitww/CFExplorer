@@ -1,0 +1,72 @@
+<%- include('partials/header.ejs') -%>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['AC',  <%=ac%>],
+          ['WA',      <%=wa%>],
+          ['TLE',  <%=tle%>],
+          ['RE', <%=re%>],
+        ]);
+
+        var options = {
+          title: 'Verdicts',
+          is3D: true,
+          backgroundColor: "transparent",
+          fontSize: 20,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+
+
+    <div class="top">
+
+        <h1 class="user-handle">
+            <%=user_handle%>
+        </h1>
+            
+        <div class="dp">
+            <img src=<%=photourl%> alt="" class = "user-img"> 
+        </div>
+
+        
+        <div class="user-detils">
+            <h1>Deatils of User</h1>
+            <h2>Current Rating : <%=user_rating%></h2>
+            <h2>Max Rating : <%=max_rating%></h2>
+
+        </div>
+       
+    </div>
+
+    <h1 class="stat-heading">User Status</h1>
+    <div class="container-fluid">
+        
+        <div class="row status">
+            <div class="col verdicts">
+                <p class="stat"> No. of ACs : <%=ac%></p>
+                <p class="stat"> No. of WAs : <%=wa%></p>
+                <p class="stat"> No. of TLEs : <%=tle%></p>
+                <p class="stat"> No. of REs : <%=re%></p>
+            </div>
+            <div class="col">
+                <div id="piechart_3d"></div>
+            </div>
+            
+        </div>
+        
+
+    </div>
+
+    
+
+               
+    
+<%- include('partials/footer.ejs') -%>

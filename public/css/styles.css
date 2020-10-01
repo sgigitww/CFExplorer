@@ -1,0 +1,169 @@
+
+.navbar{
+    background-color: #3e206d !important;
+	padding :1rem 5rem;
+}
+
+h2{
+    color: #5c2a9d;
+	font-weight: 900;
+}
+
+.footer {
+	padding: 50px;
+	margin: 0;	
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	color: #fff;
+	background-color: #3e206d;
+}
+
+
+.cf-img{
+	margin-top: 30px;
+	height: 100px;
+	width: 500px;
+}
+
+.find-user{
+	margin: 50px;
+}
+
+.container-fluid{
+	padding-top: 6rem;
+	padding-left: 10rem;
+	padding-bottom: 10rem;
+}
+
+.sm-heading{
+	width: 60%;
+	font-family: 'Gochi Hand', cursive;
+	font-size: 2.5rem;
+}
+
+body{
+	background-image: linear-gradient(to right ,#f0e3ff, #916dd5);
+}
+
+.about-cf{
+	text-align: left;
+	width: 60%;
+	margin-left: 10rem;
+	font-family: 'Rubik', sans-serif;
+
+}
+
+.abt-cf{
+	font-size: 1.5rem;
+}
+
+.find-user{
+	margin-left: 10rem;
+}
+
+
+.user-img{
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+}
+
+.user-status{
+	
+	display: flex;
+	justify-content: center;
+	padding: 5rem;
+	width: 100%;
+}
+
+.top{
+	text-align: center;
+}
+
+
+.status{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.user-handle{
+	padding-top: 2rem;
+}
+
+.verdicts{
+	text-align: left;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.dp{
+	padding: 1rem;
+}
+
+#piechart_3d{
+	height: 250px ;
+	width: 400px ;
+	
+}
+
+.stat-heading{
+	padding-top: 2rem;
+	text-align: center;
+}
+
+/* #212529  navbar color dark*/
+
+@media(max-width: 1100px){
+	body{
+		text-align: center;
+	}
+
+	.cf-img{
+		height: 100px;
+		width: 350px;
+	}
+
+	.container-fluid{
+		margin: 0 auto;
+		padding-left: 3rem;
+	}
+
+	.about-cf{
+		margin: 0 auto;
+	}
+
+	.find-user{
+		margin:5rem auto;
+	}
+
+	.abt-cf{
+		
+		font-size: 1rem;
+	}
+	.sm-heading{
+		width: 100%;
+		margin: 0 auto;
+		font-size: 2rem;
+	}
+
+	.stat{
+		font-size: 1rem;
+	}
+}
+
+@media(max-width:1050){
+
+	.top{
+		font-size: 1rem;
+	}
+
+	.verdicts{
+		position: relative;
+        text-align: center;
+        margin:0 auto;
+		padding-left:10rem ;
+		padding-right: 10rem;
+	}
+}
