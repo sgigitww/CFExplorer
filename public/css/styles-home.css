@@ -13,6 +13,7 @@ body{
 	overflow-x: hidden;
 }
 
+
 .navbar{
 	background-color: transparent !important;
 	padding :1rem 5rem;
@@ -172,6 +173,7 @@ input[type="text"]:focus {
 }
 
 .find-user{
+	
 	text-align: center;
 	width: 40%;
 	margin: 0 auto;
@@ -202,10 +204,69 @@ h2{
 	font-weight: 900;
 }
 
-.container-fluid{
-	padding-top: 6rem;
-	padding-left: 10rem;
-	padding-bottom: 10rem;
+#cp{
+	padding: 2rem;
 }
 
+.cp-heading{
+	text-align: center;
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 700;
+	width: 80%;
+	margin: 0 auto;
+	padding: 4rem;
+}
+
+
+.card{
+	
+	margin: 0 auto;
+	margin-top: 3rem;
+	width: 300px;
+}
+
+
+.card-img-top{
+	height: 300px;
+}
+
+.card-body{
+	height: 100px;
+}
+
+.card-text{
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+
+.cp-handle{
+	color: red;
+}
+
+
 /* ---------------------------------------------------------------- */
+
+@media (max-width: 990px){
+
+	.big-heading{
+		font-size: 2.5rem;
+		font-weight: 800;
+	}
+
+	.sm-heading{
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 600;
+	}
+
+	.handle-heading{
+		font-size: 2.5rem;
+		font-weight: 800;
+	}
+
+	.cp-heading{
+		font-size: 2.5rem;
+	}
+}
