@@ -1,0 +1,174 @@
+body{
+	
+	background: url("../img/code1.jpg");
+	background-size: cover;
+	margin: 0;
+	height: 100%;
+}
+
+.navbar{
+	background-color: transparent !important;
+	padding :1rem 5rem;
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+
+.navbar-brand{
+	font-size: 2rem;
+}
+
+.nav-item{
+	padding: 1.5rem;
+}
+
+.heading{
+	
+	padding: 5rem;
+	text-align: center;
+	color: #fff;
+	margin: 0 auto;
+	transition: all 2s ease-in;
+}
+
+.sm-heading{
+	width: 40%;
+	margin: 0 auto;
+	position: relative;
+	font-size: 2.5rem;
+	font-weight: 800;
+	animation-name: subheading;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes subheading{
+	0% {left: -100rem;}
+	100% {left: 0;}
+}
+
+.big-heading{
+	margin-top: 5rem;
+	font-weight: 1000;
+	position: relative;
+	animation-name: heading;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes heading{
+
+	0% {top:-10rem;}
+	100% {top: 0;}
+}
+
+.cf-img{
+	
+	margin: 2rem;
+	height: 100px;
+	width: 500px;
+	transition: all 0.2s ease-out;
+}
+
+.cf-img:hover{
+	height: 115px;
+	width: 515px;
+}
+
+#middle{
+	padding: 4rem;
+	
+	margin: 0 auto;
+}
+
+.abt-cf{
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+  color: #fff;
+  box-shadow: inset 0 -3px 0 0 #5d54a4;
+
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #5d54a4;
+}
+
+::placeholder{
+	color: #fff;
+}
+
+.form-top{
+	padding: 2rem;
+	position: relative;
+	animation-name: form-top;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+@keyframes form-top{
+
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.btn{
+	margin-top: 2rem;
+	height: 3rem;
+	width: 7rem;
+}
+
+.codeforces{
+	font-style: italic;
+	color: #eeeeee;
+}
+
+.find-user{
+	text-align: center;
+	width: 40%;
+	margin: 0 auto;
+	padding-bottom: 5rem;
+}
+
+.footer {
+	font-weight: 400;
+	font-size: 2rem;
+	padding: 5rem;
+	margin: 0;	
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	color: #fff;
+	/* background-color: #3e206d; */
+}
+
+.handle-heading{
+	font-size: 3.6rem;
+}
+
+h2{
+    color: #fff;
+	font-weight: 900;
+}
+
+.container-fluid{
+	padding-top: 6rem;
+	padding-left: 10rem;
+	padding-bottom: 10rem;
+}
+
+/* ---------------------------------------------------------------- */
