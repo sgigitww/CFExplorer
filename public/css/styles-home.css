@@ -1,9 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body{
 	
 	background: url("../img/code1.jpg");
 	background-size: cover;
 	margin: 0;
 	height: 100%;
+	overflow-x: hidden;
 }
 
 .navbar{
@@ -65,7 +72,7 @@ body{
 	
 	margin: 2rem;
 	height: 100px;
-	width: 500px;
+	width: 450px;
 	transition: all 0.2s ease-out;
 }
 
@@ -75,8 +82,9 @@ body{
 }
 
 #middle{
+	text-align: center;
 	padding: 4rem;
-	
+	align-items: center;
 	margin: 0 auto;
 }
 
@@ -84,6 +92,33 @@ body{
 	color: #fff;
 	font-size: 1.5rem;
 	font-weight: 600;
+	width:70%;
+	margin: 0 auto;
+	line-height: 1.8;
+}
+
+.about-cf{
+	
+	animation-name: aboutcf;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+.cfimage{
+	animation-name: cfimage;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes aboutcf{
+	0% {left: -50rem;}
+	100% {left: 0;}
+}
+
+@keyframes cfimage{
+
+	0% {right:-50rem;}
+	100% {right: 0;}
 }
 
 input[type="text"] {
@@ -157,7 +192,9 @@ input[type="text"]:focus {
 }
 
 .handle-heading{
-	font-size: 3.6rem;
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+	font-size: 3.2rem;
 }
 
 h2{
